@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Street Countdown!</title>
+  <style type="text/css">
+   body, h1, h2 { margin: 0; padding: 0 }
+   h1 { padding-top: 9px; padding-left: 15px }
+   
+   .header {height: 60px; background: #C00; color: #FFF}
+   .container {margin: auto; width: 960px}
+   .leftcol50 {float: left; width: 480px}
+   .rightcol50 {float: right; width: 480px}
+  </style>
+  <script type="text/javascript" src=”http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js”></script>
+ </head>
+ <body>
+  <div class="header">
+   <h1>STREET COUNTDOWN BABY!</h1>
+  </div>
+  <div class="container">
+  
+   <input type="text" style="height: 60px; font-size: 24px; width: 100%; text-align: center" id="letters" />
+   <br /><br />
+   <div class="leftcol50">
+   	<input type="button" value="Consonant" onclick="javascript:addConst();" style="width: 80%; font-size: 24px" />
+   </div>
+   <div class="rightcol50">
+   <input type="button" value="Vowel" onclick="javascript:addVowel();" style="width: 80%; font-size: 24px" />
+   </div>
+   <div style="clear: both"></div>
+  </div>
+   <div style="clear: both"></div>
+ </body>
+ 
+ <script type="text/javascript">
+ 	$(document).ready(function() {
+ 		
+ 	});
+ 	
+ 	function addConst()
+ 	{
+ 		$('#letters').html('a');
+ 	}
+ 	
+ 	function addVowel()
+ 	{
+ 	alert("add a vowel");
+ 	}
+ </script>
+</html>
